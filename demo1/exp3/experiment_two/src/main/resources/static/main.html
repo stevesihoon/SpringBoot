@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Hello</title>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script>
+        $.ajax({
+            type: "GET",
+            url: "/body",
+            success: (data) => {
+                console.log(data);
+                $('#pp1').html(data);
+            }
+        })
+    </script>
+</head>
+<body>
+<h1>hihi</h1>
+
+<div id="pp1"> </div>
+
+</body>
+</html>
